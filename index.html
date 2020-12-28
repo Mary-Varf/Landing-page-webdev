@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Иван Иванов - Frontend-разработчик и веб‑верстальщик</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<script src="https://kit.fontawesome.com/f4c9d39343.js" crossorigin="anonymous" defer></script>
+	<script src="jquery-3.3.1.min.js" defer></script>
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<script src="jquery.maskedinput.js"></script>
+	<script src="jquery.maskedinput.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="page">
+	<header class="header">
+		<div class="holder header__holder">
+			<button class="header__burger">
+					<span></span>
+				</button>
+				<nav class="nav header__nav">
+					<ul class="nav__list header__list">
+						<li class="nav__item header__item"><a href="#skills" class="nav__link header__link">Услуги</a></li>
+						<li class="nav__item header__item"><a href="#example" class="nav__link header__link">Портфолио</a></li>
+						<li class="nav__item header__item"><a href="#price" class="nav__link header__link">Стоимость</a></li>
+					</ul>
+				</nav>
+			<div class="header__right-side">
+				<address class="address"><a href="tel:+7000000000" class="link phone-number"><b>+7 (000) 000-00-00</b></a></address>
+				<button class="button header__button button_white" rel="reg_form-item-1">Заказать&nbsp;звонок</button>
+				<button class="button phone__button order-call-mob" rel="reg_form-item-1"  id="order-call-mob"><picture><source srcset="img/phone.webp" type="image/webp"><picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt="&#128222;"></picture></picture></button>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="flying-elements">
+				<div class="flying-elements__item1 flying__tag">{&nbsp;}</div>
+				<div class="flying-elements__item2 flying__tag">#</div>
+				<div class="flying-elements__item3 flying__tag">&lt;div&gt;</div>
+				<div class="flying-elements__item4 flying__tag">&lt;/&gt;</div>
+				<div class="flying-elements__item5 flying__tag">&lt;div&gt;</div>
+				<div class="flying-elements__item6 flying__tag">&lt;/&gt;</div>
+			</div>
+		<div class="holder main__holder">
+			<div class="about__block">
+				<h1 class="main-title about__block-text-item">Иван&nbsp;Иванов</h1>
+				<h2 class="subtitle about__block-text-item">Frontend-разработчик и&nbsp;веб&#8209;верстальщик</h2>
+				<div class="know-more about__block-item know-more__box">
+					<button class="button button_orange know-more__button" rel="reg_form-item-2">Узнать&nbsp;больше</button>
+				</div>
+			</div>
+			<div class="bg__block">
+				<picture  class="photo__block">
+					    <source srcset="img/boy.png"  media="(min-width: 600px)">
+					    <source srcset="img/boymob.png" type="image/webp">
+					    <img class="photo__img" src="img/boy.png" alt="Дмитрий Алексеев">
+				</picture>
+			</div>
+		</div>
+	</main>
+	<section class="skills" id="skills">
+		<h3 class="title">Что я делаю</h3>
+		<div class="holder skills__holder">
+			<div class="skills__item skills__item1"><div class="skills-block_item1 skills-block_item"></div>Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</div>
+			<div class="skills__item skills__item2"><div class="skills-block_item2 skills-block_item"></div>Адаптивная вёрстка под все браузеры и&nbsp;устройства</div>
+			<div class="skills__item skills__item3"><div class="skills-block_item3 skills-block_item"></div>Frontend &#8209; разработка и&nbsp;программирование</div>
+			<div class="skills__item skills__item4"><div class="skills-block_item4 skills-block_item"></div>Исправление и&nbsp;доработка существующей вёрстки</div>
+		</div>
+		<div class="know-price-box">
+			<button class="button button_orange know-price-box__button" rel="reg_form-item-2">Узнать&nbsp;стоимость</button>
+		</div>	
+	</section>
+	<div class="example" id="example">
+		<h3 class="title example__title">Примеры моих работ</h3>
+		<div class="swiper-container">
+			<section class="slider container slider-container">
+			<ul class="slider__list">
+				<li class="slider__item">
+					<picture>
+						<source srcset="img/slider/slide-3.png"  media="(min-width: 600px)">
+						<source srcset="img/slider/slide-mob-3.png" type="image/webp">
+						<img src="img/slider/slide-3.png" alt="Сайт психолога Веры Антоновой">
+					</picture>
+					<div class="slider__text-container">
+					<div class="slider__text">Сайт психолога Веры Антоновой</div>
+					</div>
+				</li>
+				<li class="slider__item">
+					<picture>
+						<source srcset="img/slider/slide-1.png"  media="(min-width: 600px)">
+						<source srcset="img/slider/slide-mob-1.png" type="image/webp">
+						<img src="img/slider/slide-1.png" alt="Сайт магазина детской одежды">
+					</picture>
+					<div class="slider__text-container">
+					<div class="slider__text">Сайт магазина детской одежды</div>
+					</div>
+				</li>
+				<li class="slider__item">
+					<picture>
+						<source srcset="img/slider/slide-2.png"  media="(min-width: 600px)">
+						<source srcset="img/slider/slide-mob-2.png" type="image/webp">
+						<img src="img/slider/slide-2.png" alt="Сайт магазина Рыболов">
+					</picture>
+					<div class="slider__text-container">
+					<div class="slider__text">Сайт магазина "Рыболов"</div>
+					</div>
+				</li>
+
+			</ul>
+
+			<button class="slider__button slider__button--prev" aria-label="Предыдущий слайд">
+			</button>
+			<button
+			class="slider__button slider__button--next" aria-label="Следующий слайд">
+			</button>
+
+			<div class="slider__pagination paginator" aria-hidden="true"></div>
+		</section>
+		</div>
+		<div class="order-project-box">
+			<button class="button button_orange order-project-box__button" rel="reg_form-item-2">Заказать&nbsp;проект</button>
+		</div>
+	</div>
+	<section class="price" id="price">
+		<div class="flying-elements price__flying-elements">
+				<div class="flying-elements__item7 flying-elements__item">{&nbsp;}</div>
+				<div class="flying-elements__item8 flying-elements__item">#</div>
+				<div class="flying-elements__item9 flying-elements__item">&lt;div&gt;</div>
+				<div class="flying-elements__item10 flying-elements__item">&lt;/&gt;</div>
+				<div class="flying-elements__item11 flying-elements__item">{&nbsp;}</div>
+		</div>
+		<div class="holder price__holder">
+			<h4 class="info-text">Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*</h4>
+			
+			<div class="aditional-info">
+				<sup class="star">*</sup>
+				<small class="small-text">Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</small>
+			</div>
+   		</div>
+	</section>
+	<footer class="footer">
+		<div class="holder footer__holder">
+			<nav class="menu footer__menu">
+				<ul class="footer__list-margin">
+					<li class="menu__item menu__item_margin">
+						<a href="#skills" class="link menu__link footer__link">Услуги</a>
+					</li>
+					<li class="menu__item menu__item_margin">
+						<a href="#example" class="link menu__link footer__link">Портфолио</a>
+					</li>
+					<li class="menu__item menu__item_margin">
+						<a href="#price" class="link menu__link footer__link">Стоимость</a>
+					</li>
+				</ul>
+			</nav>
+			<address class="address">
+				<div class="central-container">
+				<ul class="central-container__list">
+					
+						<li  class="phonenumber central-container__list-item"><a href="tel:+7000000000" class="link phonenumber central-container__link central-container__list-item footer__link"><i class="link fas fa-phone-alt"></i>+7 (000) 000-00-00</a></li>
+
+						<li class="email central-container__list-item"><a class="link central-container__link footer__link" href="mailto:ivan@ivanov.com"><i class="link fas fa-envelope"></i>ivan@ivanov.com</a></li>
+				</ul>
+				</div>
+			</address>
+			<div class="conections">
+				<div class="footer__order-call-box order-call-box footer__order-call-block"><button class="button button_white order-call-box__button" rel="reg_form-item-1">Заказать&nbsp;звонок</button></div>
+				<div class="networks">
+						<address class="address">
+							<a class="vk networks__link footer__link"  href="https://vk.com/id65745489" target="_blank"></a>
+							<a class="fb networks__link footer__link" href="https://www.facebook.com/mary.varf.5" target="_blank"></a>
+							<a class="tw networks__link footer__link" href="https://twitter.com/Mary69668465" target="_blank"></a>
+							<a class="in networks__link footer__link" href="#" target="_blank"></a>
+						</address>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="copyright">
+			<small class="copyright_style">© Иван Иванов, 2016 – 2018</small>
+		</div>
+	</footer>
+	
+	<div class="popup reg_form-item-1" id="popup-item-1">
+		<a class="close" href="#">Close</a>
+		<div class="popup_success_disappear-item-1">
+			<div class="form__title"> <h2 class="subtitle popup__subtitle">Заказать обратный <br>звонок</h2></div>
+			<form class="form form-item-1">
+			<input type="hidden" name="project_name" value="Иван Иванов сайт">
+			<input type="hidden" name="admin_email" value="bma1989@yandex.ru">
+			<input type="hidden" name="form_subject" value="Заказан звонок">
+			
+				<label class="label" for="name-1">* Имя:</label><br>
+				<input type="text" class="form__input required name" id="name-1" name="name" placeholder="Иван" maxlength="22"  required><br>
+				<label class="label" for="phone-1">* Телефон:</label><br>
+				<input class="form__input required phone" type="tel" id="phone-1"  name="phone" placeholder="8(000)000-0000" required /><br>
+				<div class="form__button"><input type="submit" class="form__submit" value="Заказать звонок" id="sendbutton-item-1"></div>		
+			</form>
+			<div class="reg_form__thanks-item-1 reg_form__thanks" style="display: none;">
+				<picture><source srcset="img/tick.webp" type="image/webp"><picture><source srcset="img/tick.webp" type="image/webp"><img src="img/tick.png" alt="Спасибо!"></picture></picture> <br>
+			</div>
+		</div>
+      	<div class="reg_form__success-page-item-1" style="display: none;">
+	      	<h2 class="subtitle popup__subtitle">С&nbsp;Вами свяжутся<br> в&nbsp;ближайшее время<br></h2>
+		</div>
+	</div>
+	<div class="popup reg_form-item-2" id="popup-item-2">
+		<a class="close" href="#">Close</a>
+		<div class="popup_success_disappear-item-2">
+			<div class="form__title"> <h2 class="subtitle popup__subtitle">Форма заявки</h2></div>
+			<form class="form form-item-2">
+			<input type="hidden" name="project_name" value="Иван Иванов сайт">
+			<input type="hidden" name="admin_email" value="bma1989@yandex.ru">
+			<input type="hidden" name="form_subject" value="Заявка">
+			
+				<label class="label" for="name-2">* Имя:</label><br>
+				<input type="text" class="form__input required name" id="name-2" name="name" placeholder="Иван" maxlength="22"  required><br>
+				<label class="label" for="phone-2">* Телефон:</label><br>
+				<input type="tel" class="form__input required phone" id="phone-2" name="phone" placeholder="8(000)000-0000" required /><br>
+				<label class="label" for="email">* E-mail:</label><br>
+				<input type="email" class="form__input required email" id="email" name="email" placeholder="ivan@gmail.com" required /><br>
+				<label class="label">Комментарий:</label><br>
+				<textarea class="form__input" name="mes" rows="3"></textarea>
+				<div class="form__button"><input type="submit" class="form__submit" value="Отправить заявку" id="sendbutton-item-2"></div>		
+			</form>
+			<div class="reg_form__thanks-item-2 reg_form__thanks" style="display: none;">
+				<picture><source srcset="img/tick.webp" type="image/webp"><picture><source srcset="img/tick.webp" type="image/webp"><img src="img/tick.png" alt="Спасибо!"></picture></picture> <br>
+			</div>
+		</div>
+      	<div class="reg_form__success-page-item-2 reg_form__thanks" style="display: none;">
+	      	<h2 class="subtitle popup__subtitle">С&nbsp;Вами свяжутся<br> в&nbsp;ближайшее время<br></h2>
+		</div>
+	</div>
+	<script src="js/script.min.js" defer></script>
+</body>
+</html>
