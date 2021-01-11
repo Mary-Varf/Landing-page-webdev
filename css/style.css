@@ -1679,7 +1679,25 @@ p {
   text-decoration: none;
   color: #8993ad;
 }
-
+.central-container__list-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.phone-img{
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  margin-right: 15px;
+}
+.email-img{
+  background-image: url(../img/email.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
 .menu__item {
   list-style: none;
   font-size: 18px;
@@ -1769,9 +1787,8 @@ p {
 .conections {
   margin-right: 20px;
 }
-
-.phonenumber {
-  margin-bottom: 22px;
+.phonenumber{
+  margin-bottom: 20px;
 }
 
 .central-container__link {
@@ -2126,17 +2143,20 @@ opacity: .50;
     margin-bottom: 80px;
   }
 }
-
+.link-container{
+    margin-left: 20px;
+}
 @media (max-width: 1024px) {
   .holder {
     width: calc(100% - 80px);
   }
 
-  .subtitle {
+  .subtitle_margin {
     margin-top: 15px;
     line-height: 30px;
     margin-bottom: 46px;
   }
+
   .skills__item {
     -ms-flex-preferred-size: 300px;
         flex-basis: 300px;
@@ -2175,7 +2195,7 @@ opacity: .50;
     margin-bottom: 0;
   }
 
-  .subtitle {
+  .subtitle-_margin {
     line-height: 70px;
   }
 
@@ -2315,7 +2335,7 @@ opacity: .50;
     margin-top: 30px;
   }
 
-  .subtitle {
+  .subtitle_margin {
     display: block;
     margin-left: -140px;
   }
@@ -3008,9 +3028,6 @@ opacity: .50;
     margin-bottom: 13px;
   }
 
-  .phonenumber {
-    margin-bottom: 17px;
-  }
 
   .networks__link {
     background-image: url("../img/sprite.png");
@@ -3081,3 +3098,4 @@ opacity: .50;
 
   .webp .networks__link { background-image: url(../img/sprite.webp); }
 }
+.comment{resize: none;}

@@ -2,12 +2,15 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Иван Иванов - Frontend-разработчик и веб‑верстальщик</title>
+	<script defer src="js/jquery-3.5.1.min.js"></script>
+	<script defer src="js/jquery.maskedinput.min.js"></script>
+	<script defer src="js/swiper-bundle.min.js"></script>
+	<script defer src="js/script.min.js"></script>
+	<script defer src="js/dist/jquery.validate.min.js"></script> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="https://kit.fontawesome.com/f4c9d39343.js" crossorigin="anonymous" defer></script>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
 	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -15,11 +18,6 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" type="text/plain">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/plain">
-	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="js/script.min.js" defer></script>
 </head>
 <body class="page">
 	<header class="header">
@@ -58,7 +56,7 @@
 		<div class="holder main__holder">
 			<div class="about__block">
 				<h1 class="main-title about__block-text-item">Иван&nbsp;Иванов</h1>
-				<h2 class="subtitle about__block-text-item">Frontend-разработчик и&nbsp;веб&#8209;верстальщик</h2>
+				<h2 class="subtitle subtitle_margin about__block-text-item">Frontend-разработчик и&nbsp;веб&#8209;верстальщик</h2>
 				<div class="know-more about__block-item know-more__box">
 					<button class="button button_orange know-more__button" rel="reg_form-item-2">Узнать&nbsp;больше</button>
 				</div>
@@ -167,13 +165,49 @@
 					</li>
 				</ul>
 			</nav>
+			<svg display="none">
+				<symbol id="icon-phone" viewBox="0 0 384 384" fill="#ff2f96">
+					<g>
+						<path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+							c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+							c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+							C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+						/>
+					</g>
+				</symbol>
+				<symbol id="icon-email" viewBox="0 0 477.867 300" fill="#ff2f96">
+					<g>
+						<path d="M460.8,68.267H17.067l221.867,182.75L463.309,68.779C462.488,68.539,461.649,68.368,460.8,68.267z"/>
+					</g>
+					<g>
+						<path d="M249.702,286.31c-6.288,5.149-15.335,5.149-21.623,0L0,98.406v294.127c0,9.426,7.641,17.067,17.067,17.067H460.8
+							c9.426,0,17.067-7.641,17.067-17.067V100.932L249.702,286.31z"/>
+					</g>
+				</symbol>
+			</svg>
 			<address class="address">
 				<div class="central-container">
 				<ul class="central-container__list">
-					
-						<li  class="phonenumber central-container__list-item"><a href="tel:+7000000000" class="link phonenumber central-container__link central-container__list-item footer__link"><i class="link fas fa-phone-alt"></i>+7 (000) 000-00-00</a></li>
-
-						<li class="email central-container__list-item"><a class="link central-container__link footer__link" href="mailto:ivan@ivanov.com"><i class="link fas fa-envelope"></i>ivan@ivanov.com</a></li>
+						<li  class="phonenumber central-container__list-item">
+							<div class="icon-container">
+							<svg class="icon icon-phone" width="18" height="18">
+								<use xlink:href="#icon-phone"></use>
+							</svg>
+							</div>
+							<div class="link-container">
+							<a href="tel:+7000000000" class="link central-container__link central-container__list-item footer__link">
+							+7 (000) 000-00-00</a></div>
+						</li>
+						<li class="email central-container__list-item">
+							<div class="icon-container">
+							<svg class="icon icon-email" width="20" height="20">
+								<use xlink:href="#icon-email"></use>
+							</svg>
+						</div>
+							<div class="link-container">
+							<a class="link central-container__link footer__link" href="mailto:ivan@ivanov.com">
+							ivan@ivanov.com</a></div>
+						</li>
 				</ul>
 				</div>
 			</address>
@@ -248,6 +282,6 @@
 	      	<h2 class="subtitle popup__subtitle-thanks">С&nbsp;Вами свяжутся<br> в&nbsp;ближайшее время<br></h2>
 		</div>
 	</div>
-	<script src="js/dist/jquery.validate.js"></script>
+
 </body>
 </html>
