@@ -89,10 +89,11 @@ $(document).click( function(e){
 });
 
 
+
 	let header__burger = document.querySelector('.header__burger');
 	let header_nav = document.querySelector('.header__nav');
 	let header__list = document.querySelector('.header__list');
-	
+
 	header__burger.onclick = function(){
 		header__burger.classList.toggle('active');
 		header_nav.classList.toggle('active');
@@ -107,7 +108,11 @@ $(document).click( function(e){
 		header__burger.classList.toggle('active');
 		header_nav.classList.toggle('active');
 	}
-
+	$('.main, .skills, .partfolio, .footer').click(function() {
+		event.preventDefault(); 
+		header__burger.classList.toggle('active');
+		header_nav.classList.toggle('active');
+	});
 $(function(){
 	$(".phone").mask("8(999) 999-9999");
   });
