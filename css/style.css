@@ -1514,6 +1514,28 @@ button.swiper-pagination-bullet {
   background-image: url(../img/arrowr.webp);
 }
 
+.webp .main__wrapper {
+  background-image: url(../img/gradient.webp);
+}
+
+.webp .networks__link {
+  background-image: url(../img/sprite.webp);
+}
+
+.webp .close {
+  background: url(../img/close.webp) no-repeat;
+}
+
+.webp .swiper-button-prev:after,
+.webp .swiper-container-rtl .swiper-button-next:after {
+  background-image: url(../img/arrow.webp);
+}
+
+.webp .swiper-button-next:after,
+.webp .swiper-container-rtl .swiper-button-prev:after {
+  background-image: url(../img/arrowr.webp);
+}
+
 @media (max-width: 1250px) {
   .swiper-button {
     display: none;
@@ -2352,8 +2374,18 @@ button.swiper-pagination-bullet {
 
   .photo__box {
     align-self: flex-end;
-    margin-top: 17px;
+    margin-top: 20px;
     margin-right: 60px;
+    height: 329px;
+  }
+
+  .main__photo {
+    align-self: flex-end;
+    height: 329px;
+  }
+
+  .main {
+    position: relative;
   }
 
   .main__wrapper {
@@ -2361,7 +2393,10 @@ button.swiper-pagination-bullet {
     margin-top: 0px;
     background-size: contain;
     width: 100%;
+    height: 380px;
     left: 0;
+    bottom: 0;
+    position: absolute;
   }
 
   .about {
@@ -2415,6 +2450,10 @@ button.swiper-pagination-bullet {
   .footer__btn--white {
     -ms-grid-row-align: center;
     align-self: center;
+  }
+
+  .webp .main__wrapper {
+    background-image: url(../img/gradient-mob.webp);
   }
 
   .webp .main__wrapper {
@@ -2587,6 +2626,10 @@ button.swiper-pagination-bullet {
 
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 8px;
+  }
+
+  .webp .main__wrapper {
+    background-image: url(../img/gradient-mob.webp);
   }
 
   .webp .main__wrapper {
