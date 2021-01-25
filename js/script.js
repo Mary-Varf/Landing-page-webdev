@@ -108,6 +108,13 @@ $(document).click( function(e){
 		header__burger.classList.toggle('active');
 		header_nav.classList.toggle('active');
 	}
+	$('.geader, .main, .skills, .portfolio, .price, .footer').click(function() {
+		if (header__burger.classList.contains('active')) {
+		event.preventDefault(); 
+		header__burger.classList.toggle('active');
+		header_nav.classList.toggle('active');
+		}
+	});
 $(function(){
 	$(".phone").mask("8(999) 999-9999");
   });
