@@ -58,7 +58,7 @@ $(function () {
 		$("#overlay").show().css({"filter" : "alpha(opacity=80)"});
 		return false;				
 	});	
-	$("a.close").click(function () {
+	$("a.popup__close").click(function () {
 		$(this).parent().fadeOut(100);
 		$("#overlay").remove("#overlay");
 		return false;
@@ -125,7 +125,7 @@ $(document).ready(function(){
 		return this.optional(element) || expression.test(value);
 	});
 		//====== валидация формы =============
-		$(".form-item-1").each(function () {
+	$(".reg-form-1__form").each(function () {
 						$(this).validate({
 							
 							focusInvalid: false,
@@ -160,27 +160,25 @@ $(document).ready(function(){
 								data: th.serialize(),
 							}).done(() => {
 								console.log("Отправлено");
-								$(".form__submit--1").css({"display": "none"});
-								$(".reg_form__thanks-item-1").css({"display": "block"});
-								setTimeout(function() {
-									$(".popup_success_disappear-item-1").remove();
-									$(".reg_form__success-page-item-1").css({"display": "block", "width":"220px"});	
-								}, 1000);
+								$(".reg-form-1__form").remove();
+								$(".reg-form-1__subtitle").remove();
+								$(".reg-form-1__answer").css({"display":"block"});
+
 								setTimeout(function(){
 									$("#popup-item-1").fadeOut();
-									  $("#overlay").fadeOut();
-								}, 3000);
+									$("#overlay").fadeOut();
+									$(".popup").fadeOut();
+								}, 1500);
 						});
 	
 						return false;
 						}
 					});
 			});
-			//====== валидация формы =============
-		$(".form-item-2").each(function () {
-					$(this).validate({
-						
-						focusInvalid: false,
+			$(".reg-form-2__form").each(function () {
+				$(this).validate({
+					
+					focusInvalid: false,
 						rules: {
 							name: {
 								required: true,
@@ -212,25 +210,26 @@ $(document).ready(function(){
 						submitHandler(form) {
 							let th = $(form);
 	
-							$.ajax({
-							type: "POST",
-							url: "mail.php", //Change
-							data: th.serialize(),
-						}).done(() => {
-							console.log("Отправлено");
-							$(".form__submit--2").css({"display": "none"});
-							$(".reg_form__thanks-item-2").css({"display": "block"});
-							setTimeout(function() {
-								$(".popup_success_disappear-item-2").remove();
-								$(".reg_form__success-page-item-2").css({"display": "block", "width":"220px"});	
-							}, 1000);
-							setTimeout(function(){
-								$("#popup-item-2").fadeOut();
-								  $("#overlay").fadeOut();
-							}, 3000);
-					});
-					return false;
-					}
+						$.ajax({
+						type: "POST",
+						url: "mail.php", //Change
+						data: th.serialize(),
+					}).done(() => {
+						console.log("Отправлено");
+						$(".reg-form-2__form").remove();
+						$(".reg-form-2__subtitle").remove();
+						$(".reg-form-2__answer").css({"display":"block"});
+
+						setTimeout(function(){
+							$("#popup-item-2").fadeOut();
+							$("#overlay").fadeOut();
+							$(".popup").fadeOut();
+						}, 1500);
+
+				});
+
+				return false;
+				}
 				});
 			});
 	})
