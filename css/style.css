@@ -1926,6 +1926,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 970px) {
+  .skills__wrapper {
+    padding: 0 100px;
+  }
+}
+
 @media (max-width: 920px) {
   .main__title {
     font-size: 40px;
