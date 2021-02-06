@@ -760,6 +760,7 @@ input:-webkit-autofill:active {
   display: block;
   color: #ff2f96;
   font-size: 13px;
+  -ms-grid-row-align: start;
   align-self: start;
 }
 
@@ -1557,6 +1558,24 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.webp .main__wrapper {
+  background-image: url(../img/gradient.webp);
+}
+
+.webp .networks__link {
+  background-image: url(../img/sprite.webp);
+}
+
+.webp .swiper-button-prev:after,
+.webp .swiper-container-rtl .swiper-button-next:after {
+  background-image: url(../img/arrow.webp);
+}
+
+.webp .swiper-button-next:after,
+.webp .swiper-container-rtl .swiper-button-prev:after {
+  background-image: url(../img/arrowr.webp);
+}
+
 @media (max-width: 1250px) {
   .swiper-button {
     display: none;
@@ -2162,6 +2181,10 @@ button.swiper-pagination-bullet {
     width: 12px;
     height: 12px;
   }
+
+  .webp .header__btn {
+    background-image: url(../img/phone.webp);
+  }
 }
 
 @media (max-width: 670px) {
@@ -2553,6 +2576,10 @@ button.swiper-pagination-bullet {
   .webp .main__wrapper {
     background-image: url(../img/gradient-mob.webp);
   }
+
+  .webp .main__wrapper {
+    background-image: url(../img/gradient-mob.webp);
+  }
 }
 
 @media (max-width: 360px) {
@@ -2720,6 +2747,10 @@ button.swiper-pagination-bullet {
 
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 8px;
+  }
+
+  .webp .main__wrapper {
+    background-image: url(../img/gradient-mob.webp);
   }
 
   .webp .main__wrapper {
