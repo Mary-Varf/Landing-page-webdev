@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 /* roboto-regular - latin_cyrillic */
 
 @font-face {
@@ -1606,13 +1599,13 @@ button.swiper-pagination-bullet {
   }
 
   .skills__wrapper {
-    padding: 0 190px;
+    padding: 0 150px;
     flex-wrap: wrap;
     margin-bottom: 10px;
   }
 
   .skill__block {
-    margin-bottom: 85px;
+    margin: 0 20px 85px;
   }
 
   /*portfolio*/
@@ -1942,6 +1935,10 @@ button.swiper-pagination-bullet {
     width: 350px;
   }
 
+  .skill__block {
+    margin: 0 0 85px;
+  }
+
   .main__text {
     font-size: 16px;
     line-height: 1.5em;
@@ -2142,6 +2139,50 @@ button.swiper-pagination-bullet {
 
   .skill__block {
     margin-bottom: 20px;
+  }
+
+  .skill__block {
+    width: 250px;
+  }
+
+  .skill__text {
+    font-size: 16px;
+  }
+
+  .skill__item-1:before,
+  .skill__item-2:before,
+  .skill__item-3:before,
+  .skill__item-4:before {
+    content: " ";
+    background-image: url(../img/sprite2.gif);
+    background-repeat: no-repeat;
+    position: absolute;
+    overflow: hidden;
+    height: 70px;
+    width: 65px;
+    margin-bottom: 18px;
+    left: 50%;
+    top: -75px;
+    transform: translate(-50%, 0);
+  }
+
+  .skill__item-1:before {
+    background-position: 0px bottom;
+    height: 73px;
+  }
+
+  .skill__item-2:before {
+    background-position: -75px bottom;
+  }
+
+  .skill__item-3:before {
+    background-position: -154px bottom;
+    height: 75px;
+  }
+
+  .skill__item-4:before {
+    background-position-x: -322px;
+    width: 76px;
   }
 
   .section__title--style {
@@ -2378,42 +2419,6 @@ button.swiper-pagination-bullet {
 
   .skill__btn--orange {
     padding: 18px 61px;
-  }
-
-  .skill__item-1:before,
-  .skill__item-2:before,
-  .skill__item-3:before,
-  .skill__item-4:before {
-    content: " ";
-    background-image: url(../img/sprite2.gif);
-    background-repeat: no-repeat;
-    position: absolute;
-    overflow: hidden;
-    height: 70px;
-    width: 65px;
-    margin-bottom: 18px;
-    left: 50%;
-    top: -75px;
-    transform: translate(-50%, 0);
-  }
-
-  .skill__item-1:before {
-    background-position: 0px bottom;
-    height: 73px;
-  }
-
-  .skill__item-2:before {
-    background-position: -75px bottom;
-  }
-
-  .skill__item-3:before {
-    background-position: -154px bottom;
-    height: 75px;
-  }
-
-  .skill__item-4:before {
-    background-position-x: -322px;
-    width: 76px;
   }
 
   .reg_form {
