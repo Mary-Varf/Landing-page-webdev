@@ -1923,6 +1923,18 @@ button.swiper-pagination-bullet {
   .skills__wrapper {
     padding: 0 100px;
   }
+  /*decoration-price*/
+
+  .fly-tag__item-9 {
+    display: block;
+    transform: translate(545px, 345px) rotate(15deg) scale(0.45);
+  }
+
+  .fly-tag__item-10 {
+    display: block;
+    transform: translate(935px, 325px) rotate(-22deg) scale(0.75);
+  }
+
 }
 
 @media (max-width: 920px) {
@@ -2243,6 +2255,14 @@ button.swiper-pagination-bullet {
   .main__text {
     width: 280px;
   }
+  
+  .about {
+    min-width: 250px;
+  }
+  .photo__box{
+    margin-left: 50px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -2264,6 +2284,7 @@ button.swiper-pagination-bullet {
     display: block;
   }
 
+ 
   .header__burger.active span {
     transform: rotate(45deg);
     top: 7px;
@@ -2281,14 +2302,47 @@ button.swiper-pagination-bullet {
     z-index: 50;
   }
 
-  .main {
-    margin-top: 90px;
+  .header__container {
+    padding: 25px 20px;
   }
 
-  .about {
-    min-width: 200px;
+  .phone__link {
+    font-size: 18px;
   }
+    /*****************************/
 
+    .main__container {
+      padding: 0 20px;
+    }
+  
+    .main {
+      margin-top: 90px;
+    }
+  
+    .about {
+      min-width: 200px;
+    }
+  
+  
+    .main__title {
+      font-size: 30px;
+      margin-top: 90px;
+    }
+  
+    .main__text {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin: 15px 0 24px 0;
+    }
+  
+    .photo__box {
+      margin-left: 30px;
+    }
+  
+    .btn--orange {
+      font-size: 15px;
+    }
+  
   /*Skills*/
 
   .skills__wrapper {
@@ -2298,38 +2352,6 @@ button.swiper-pagination-bullet {
     justify-content: center;
   }
 
-  .header__container {
-    padding: 25px 20px;
-  }
-
-  .phone__link {
-    font-size: 18px;
-  }
-
-  .main__container {
-    padding: 0 20px;
-  }
-
-  /*****************************/
-
-  .main__title {
-    font-size: 30px;
-    margin-top: 90px;
-  }
-
-  .main__text {
-    font-size: 16px;
-    line-height: 1.5em;
-    margin: 15px 0 24px 0;
-  }
-
-  .photo__box {
-    margin-left: 10px;
-  }
-
-  .btn--orange {
-    font-size: 15px;
-  }
 
   .section__title {
     font-size: 30px;
@@ -2348,7 +2370,7 @@ button.swiper-pagination-bullet {
     width: 100%;
   }
 
-  /*Skills*/
+
 
   .skills__container {
     padding: 45px 0px;
@@ -2447,6 +2469,13 @@ button.swiper-pagination-bullet {
 
   .central-container__list {
     padding-left: 0px;
+  }
+   
+  .right-footer-box {
+    width: 100%;
+  }
+  .footer__container{
+    padding: 40px 20px;
   }
 }
 
