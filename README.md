@@ -1,6 +1,6 @@
 # Landing page
 Ivan web-developer landing page
-<h2 align="center"><a  href="https://mary-varf.github.io/Ivan_Ivanov_repos/">Demo</a></h2>
+<h2 align="center"><a  href="https://mary-varf.github.io/Landing-page-webdev/">Demo</a></h2>
 
 
 
